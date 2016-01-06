@@ -2,8 +2,17 @@ div {
 	margin: 0 auto;
 }
 
+.row {
+	height: auto;
+}
+
+#left-column {
+	height: auto;
+	width: 30%;
+}
+
 .post {
-	width: 670px;
+	width: 70%;
 	padding: 20px 30px;
 	border-top: 1px solid black;
 }

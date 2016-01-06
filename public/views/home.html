@@ -1,0 +1,30 @@
+<div class="row">
+	<div id="left-column">
+		{{message}}
+	</div>
+
+	<div ng-repeat="post in data" class="post">
+		<div class="top-section">
+			<div class="title">title: {{post.title}}</div>
+			<div class="buttons">
+				<input type="button" ng-click="deletePost(post._id)" value="delete" />
+				<input type="button" ng-click="updatePost(post._id)" value="update" />
+			</div>
+		</div>
+		<div>post: {{post.content}}</div>
+	</div>
+
+	<div>
+		<form name="newPost">
+			<label>
+				Title:
+				<input type="text" name="title" ng-Model="post.title">
+			</label>
+			<label>
+				Content:
+				<input type="text" name="title" ng-Model="post.content">
+			</label>
+		    <input type="submit" ng-click="save(post)" value="Save" />
+		</form>
+	</div>	
+</div>

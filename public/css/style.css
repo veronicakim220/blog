@@ -1,0 +1,22 @@
+div {
+	margin: 0 auto;
+}
+
+.post {
+	width: 670px;
+	padding: 20px 30px;
+	border-top: 1px solid black;
+}
+
+.top-section {
+	position: relative;
+	height: 40px;
+}
+
+.title {
+	float: left;
+}
+
+.buttons {
+	float: right;
+}
